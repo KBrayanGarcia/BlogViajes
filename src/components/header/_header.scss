@@ -1,7 +1,10 @@
 .header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #eeaabb;
-	color: #fff;
+	margin-top: 10px;
+	@include section();
+	&__container{
+		@include container();
+	}
+	&__logotipo{
+		width: initial;
+	}
 }
