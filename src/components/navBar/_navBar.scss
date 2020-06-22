@@ -1,0 +1,54 @@
+.navBar{
+	background-color: #ff0080;
+	@include section();
+	&__container{
+		@include container();
+	}
+	&__enlaces{
+		max-height: 0;
+		overflow: hidden;
+		transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		@include media(tablets){
+			max-height: initial;
+		}
+	}
+	&__enlaces.mostrar{
+		max-height: 300px;
+	}
+	&__enlace{
+		display: block ;
+		color: white;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 30px;
+		text-align: center;
+		transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		@include media(tablets){
+			display: inline-block;
+		}
+		&:hover{
+			background-color: #6cd6ef;
+		}
+	}
+	&__burguer{
+		padding: 20px;
+		text-align: center;
+		cursor: pointer;
+		@include media(tablets){
+			display: none;
+		}
+	}
+	&__burguer-icon{
+		font-size: 1.875rem;
+		color: #fff;
+	}
+
+}

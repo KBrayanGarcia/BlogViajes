@@ -1,6 +1,53 @@
+@mixin media($breakpoint){
+	@if($breakpoint == movil-l){
+	  @media (min-width: 576px){
+			@content;
+	  }
+	}@else if($breakpoint == tablets){
+	  @media (min-width: 768px){
+			@content;
+	  }
+	}@else if($breakpoint == desktops){
+	  @media (min-width: 992px){
+			@content;
+	  }
+	}
+	@else if($breakpoint == desktop-l){
+	  @media (min-width: 1200px){
+			@content;
+	  }
+	}
+  }
+
+  @mixin container(){
+	  max-width: 1200px;
+	  width: 95%;
+	  margin: 0 auto;
+  }
+  @mixin section(){
+	  margin-bottom:25px;
+  }
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+	font-size: 14px;
+	@include media(tablets){
+		font-size: 16px;
+	}
+	@include media(desktops){
+		font-size: 18px;
+	}
+}
+img{
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+}
 @import '../components/header/header';
+@import '../components/navBar/navBar';
