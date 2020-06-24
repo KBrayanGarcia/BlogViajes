@@ -17,3 +17,4 @@ for (let i = 0; i < enlaces.length; i++){
 	navBar__enlaces.innerHTML += (
 		`<a href="/" class="navBar__enlace">${enlaces[i]}</a>`);
 }
+export {enlaces};

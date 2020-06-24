@@ -1,0 +1,47 @@
+.footer-seccion-1{
+	padding: 40px 0;
+	color: white;
+	background-color: #ff0080;
+	@include media(tablets){
+		padding: 70px 0;
+	}
+	&__container{
+		@include media(tablets){
+			display: flex;
+			justify-content: space-between;
+		}
+		@include container();
+	}
+	&__nosotros{
+		flex:  0 0 calc(30% - 10px);
+		text-align: center;
+		@include media(tablets){
+			text-align: left;
+		}
+	}
+	&__nav{
+		display: none;
+		flex:  0 0 calc(70% - 10px);
+		@include media(tablets){
+			display: block;
+			text-align: right;
+			
+		}
+	}
+	&__titulo{
+		margin-bottom: 10px;
+	}
+	&__enlace{
+		padding: 15px 10px;
+		color: white;
+	}
+}
+.footer-seccion-2{
+	padding: 20px 0;
+	background-color: #b00058;
+	&__container{
+		text-align: center;
+		color: white;
+		@include container();
+	}
+}

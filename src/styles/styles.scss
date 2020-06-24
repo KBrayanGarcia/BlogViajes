@@ -54,6 +54,7 @@ a{
 @import '../components/header/header';
 @import '../components/navBar/navBar';
 @import '../components/blogs/blogs';
+@import '../components/footer/footer';
 
 .main{
 	@include container();
