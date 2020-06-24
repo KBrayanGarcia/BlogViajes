@@ -9,5 +9,15 @@ html(lang="es")
 	body
 		include ../header/_header.pug
 		include ../navBar/_navBar.pug
+		main.main
+			include ../blogs/_blogs.pug
+			.sidebar
+				.sidebar__container
+					h2.sidebar__titulo Otros Post
+					a(href="/" class="sidebar__enlace") entrada 1
+					a(href="/" class="sidebar__enlace") entrada 2
+					a(href="/" class="sidebar__enlace") entrada 3
+					a(href="/" class="sidebar__enlace") entrada 4
+					a(href="/" class="sidebar__enlace") entrada 5
 		script(src="js/main.js")
 		block content

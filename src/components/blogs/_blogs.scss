@@ -1,0 +1,47 @@
+.blogs{
+	flex:  0 0 calc(70% - 10px);
+	@include section();
+	&__container{
+		@include container();
+	}
+}
+.blog{
+	margin-bottom: 20px;
+	height: auto;
+	overflow: hidden;
+	&:last-of-type{
+		margin-bottom: 0px;
+	}
+	&__titulo{
+		color: #00b8e4;
+		padding: 10px 0;
+	}
+	&__imagen{
+		@include media(tablets){		
+			width: 50%;
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	&__contenido{
+		margin-top: 10px;
+		@include media(tablets){
+			margin-top: 0;
+		}
+	}
+	&__enlace{
+		display: inline-block;
+		margin-top: 10px;
+		color: white;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 30px;
+		text-align: center;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		background-color: #00b8e4;
+	}
+}

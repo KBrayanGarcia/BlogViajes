@@ -33,6 +33,7 @@
 	box-sizing: border-box;
 }
 html{
+	line-height: 1.5;
 	font-size: 14px;
 	@include media(tablets){
 		font-size: 16px;
@@ -49,5 +50,38 @@ img{
 a{
 	text-decoration: none;
 }
+
 @import '../components/header/header';
 @import '../components/navBar/navBar';
+@import '../components/blogs/blogs';
+
+.main{
+	@include container();
+	@include media(tablets){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.sidebar{
+	flex: 0 0 calc(30% - 10px);
+	@include section();
+	&__container{
+		@include container();
+	}
+	&__titulo{
+		color: #00b8e4;
+	}
+	&__enlace{
+		display: block;
+		color: #00b8e4;
+		text-transform: capitalize;
+		margin-top: 10px;
+		text-decoration: none;
+		padding: 8px 0;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+}
